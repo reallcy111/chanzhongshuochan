@@ -1,0 +1,28 @@
+{
+  "skill_name": "chanzhongshuochan",
+  "version": "0.1.0",
+  "description": "缠中说禅技术分析技能",
+  "default_config": {
+    "fx_config": {
+      "min_strength": 0.005,
+      "allow_secondary": true
+    },
+    "bi_config": {
+      "min_klines": 5,
+      "min_amplitude": 0.005
+    },
+    "zs_config": {
+      "min_segments": 3,
+      "max_segments": 9,
+      "overlap_method": "three"
+    },
+    "beichi_config": {
+      "macd_area_threshold": 0.8,
+      "dif_height_threshold": 1.0,
+      "min_strength": 0.2
+    }
+  },
+  "supported_products": ["A 股", "ETF", "期货"],
+  "default_level": "30 分钟",
+  "multi_levels": ["日线", "30 分钟", "5 分钟", "1 分钟"]
+}

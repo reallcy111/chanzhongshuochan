@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-06-23T23:06:40.816619",
+  "python_version": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+  "platform": "linux",
+  "tests": {
+    "python_version": {
+      "status": "pass",
+      "version": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+      "detail": ">= 3.7 required"
+    },
+    "cache_dir_writable": {
+      "status": "pass",
+      "path": "/tmp/.cache/chanzhongshuochan"
+    },
+    "akshare_import": {
+      "status": "pass",
+      "version": "1.18.64"
+    },
+    "akshare_a_kline": {
+      "status": "pass",
+      "detail": "获取 112 行 A 股 K 线",
+      "columns": [
+        "date",
+        "open",
+        "close",
+        "high",
+        "low",
+        "amount"
+      ]
+    },
+    "akshare_hk_kline": {
+      "status": "fail",
+      "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    "akshare_us_kline": {
+      "status": "fail",
+      "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    "akshare_a_spot": {
+      "status": "fail",
+      "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    "qveris_key_present": {
+      "status": "fail",
+      "error": "QVERIS_API_KEY 未配置（env 环境变量或 ~/.openclaw/openclaw.json env 字段）"
+    },
+    "qveris_realtime_quote": {
+      "status": "skip",
+      "reason": "API key 缺失"
+    },
+    "qveris_news": {
+      "status": "skip",
+      "reason": "API key 缺失"
+    },
+    "tavily_key_present": {
+      "status": "fail",
+      "error": "TAVILY_API_KEY 未配置"
+    },
+    "tavily_search_finance": {
+      "status": "skip",
+      "reason": "API key 缺失"
+    },
+    "mplfinance_plot": {
+      "status": "fail",
+      "error": "依赖未安装: No module named 'mplfinance'"
+    },
+    "agent_browser_version": {
+      "status": "pass",
+      "detail": "版本: agent-browser 0.27.3"
+    },
+    "network_qveris.ai": {
+      "status": "pass",
+      "error": null
+    },
+    "network_api.tavily.com": {
+      "status": "pass",
+      "error": null
+    },
+    "network_qt.gtimg.cn": {
+      "status": "pass",
+      "error": null
+    }
+  },
+  "summary": {
+    "pass": 8,
+    "fail": 6,
+    "skip": 3
+  }
+}

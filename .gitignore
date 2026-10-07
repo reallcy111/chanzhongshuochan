@@ -1,0 +1,28 @@
+# ===== 密钥：绝不提交 =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+
+# ===== 历史归档 =====
+.archive/
+archive/
+
+# ===== 产物 =====
+*_kline.png
+*.tmp
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
